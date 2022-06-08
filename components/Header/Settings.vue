@@ -1,7 +1,7 @@
-<template>
+<template >
   <v-menu v-model="open" :close-on-content-click="closeOnContentClick" transition="slide-y-transition" offset-y
     nudge-top="-20" bottom class="menu-setting">
-    <template v-slot:activator="{ on }">
+    <template v-slot:activator="{ on }" class="menu-setting">
       <div class="setting">
         <v-btn fab text small v-on="on" class="ma-3">
           <v-icon :class="{ invert: invert, active: open }" class="icon material-icons-round">

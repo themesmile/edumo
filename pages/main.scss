@@ -26,18 +26,99 @@ $heading-font-family: $body-font-family;
     font-family: $font-family, sans-serif !important;
 
   }
+  .cryptogate-title{
+position: relative;
+&::after{
+  content: "";
+  display: block;
+  height: 4px;
+  width: 200px;
+  background-color: #4584db69;
+  margin: 30px auto 15px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 0;
 
+}
+&::before{
+  content: "";
+  display: block;
+  height:4px;
+  width: 50px;
+  background-color: #1a53a1;
+  margin: 0 auto;
+  border-radius: 10%;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+}
+  }
 
   .comparison {
-    background: linear-gradient(180deg, #B3D1FB 0%, #FFFFFF 100%);
+    background: #F6F9FE;
+    padding: 4% 0;
   }
 
   .home {
-    background: linear-gradient(180deg, #FFFFFF 0%, #B3D1FB 100%);
+
+    background: (url(../static/images/bg-main-top.png));
+    background-size: 100%;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 1;
+    
+
+    // &::before {
+    //   content: "";
+    //   background: (url(../static/images/home-bg.svg));
+    //   height: 140vh;
+    //   width: 100%;
+    //   position: absolute;
+    //   z-index: 0;
+    //   opacity: 0.8;
+    //   bottom: 0;
+    //   background-size: 100%;
+    //   animation: scroll-anim 140s linear infinite;
+    // }
+
+  }
+
+  @keyframes scroll-anim {
+    0% {
+      background-position: 50% 0;
+    }
+
+    100% {
+      background-position: 50% (-140vh * 3);
+    }
+  }
+
+  .custom-shape-divider-bottom-1645611041 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1645611041 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 90px;
+  }
+
+  .custom-shape-divider-bottom-1645611041 .shape-fill {
+    fill: #FFFFFF;
   }
 
   .account-bg-color {
-    background: linear-gradient(180deg, #FFFFFF 0%, #B3D1FB 100%);
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
   }
 }
 

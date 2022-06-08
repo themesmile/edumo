@@ -60,7 +60,7 @@
 </style>
 
 <script>
-  import logo from '~/static/images/cryptogate-logo.svg'
+  import logo from '~/static/images/logo-edumo.svg'
   import navMenu from './menu'
   import Settings from './Settings'
   import MobileMenu from './MobileMenu'

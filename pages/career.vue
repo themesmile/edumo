@@ -147,7 +147,7 @@
     },
     head() {
       return {
-        title: brand.starter.name + ' - Home Page'
+        title: brand.starter.name + ' - Career'
       }
     }
   }

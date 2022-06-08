@@ -1,10 +1,10 @@
 const brand = {
   starter: {
-    name: 'Cryptogate',
+    name: 'Edumo',
     desc: 'Vue Starter Template',
-    prefix: 'cryptogate',
-    footerText: 'Cryptogate Theme All Rights Reserved 2020',
-    logoText: 'Cryptogate Theme',
+    prefix: 'edumo',
+    footerText: 'Edumo Theme All Rights Reserved 2020',
+    logoText: 'Edumo Theme',
     projectName: 'Crypto Gates, Inc.',
     url: '',
     img: '/static/images/starter-logo.png',

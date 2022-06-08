@@ -1,5 +1,6 @@
 .hero-cryptogate-two {
     margin: 0 auto;
+    height: 100vh;
 
     .v-progress-linear {
         border-radius: 60px;
@@ -42,13 +43,20 @@
     }
 
     .cryptogate-button {
-        background-image: linear-gradient(88.63deg, #0065F2 7.41%, #619BFF 54.43%, #9E61FF 99.53%);
+   
+        background: linear-gradient(85.89deg, #49478C 7.82%, #9756FF 117.28%);
         font-family: "Outfit", sans-serif !important;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
         text-transform: capitalize !important;
 
+    }
+    .cryptogate-button-secondary {
+        background:transparent!important;
+        font-family: "Outfit", sans-serif !important;
+        font-size: 16px;
+        text-transform: capitalize !important;
     }
 
 }

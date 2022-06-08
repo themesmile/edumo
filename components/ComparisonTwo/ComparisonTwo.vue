@@ -1,89 +1,112 @@
 <template>
   <div class="comparison-cryptogate pt-12 ">
-    <v-row class="d-flex align-center pt-12 ">
-      <v-col ols="12" sm="12" md="12" lg="12" class="pa-2 pr-4">
-        <h3 class="display-1 font-weight-bold text-capitalize text-center mt-16 mb-2">Same principal, higher returns
-        </h3>
-        <h5 class="title font-weight-medium text-capitalize text-center mb-3">See the potential returns of crypto
-          investments
-        </h5>
+
+    <v-row justify="center" class="mb-12 text-center ">
+      <v-col md="6" sm="6" cols="6" lg="6" class="pa-2 pr-4">
+        <h2 class="font-weight-medium display-1 mb-3 p-10"><span class="font-weight-bold indigo--text">Edumo</span> is
+          digital learning company that we<br> provide a way for online learning platform </h2>
+        <p class="body-1 mt-5"> Our business focuses on providing service for clients who want to move from traditional,
+          boring, offline learning to a digital-based learning with full online or hybrid method. </p>
       </v-col>
     </v-row>
-    <v-row class="d-flex align-center">
-
-      <v-col cols="12" sm="12" md="3" lg="3" class="pa-2">
-        <v-progress-linear value="30" rounded class="justify-start pl-2 my-6" height="60" color="#0065F2">
-          <span class="progress-bar-icons material-icons-round">
-            account_balance
-          </span>
-          <span class="progress-bar-txt body-2 ">
-            Deposit
-          </span>
-          <span class=" progress-bar-price font-weight-black body-1">
-            $1.050
-            <v-chip class="ma-2" color="primary">
-              + 5.5%
-            </v-chip>
-          </span>
-        </v-progress-linear>
-      </v-col>
-
-      <v-col cols="12" sm="12" md="3" lg="3" class="pa-2">
-        <v-progress-linear value="70" rounded class="justify-start pl-2 my-6" height="60" color="#FFCD1B">
-          <span class="progress-bar-icons material-icons-round">
-            stacked_bar_chart
-          </span>
-          <span class="progress-bar-txt body-2 ">
-            Gold
-          </span>
-          <span class=" progress-bar-price font-weight-black body-1">
-            $1.277
-            <v-chip class="ma-2" color="#FFCD1B">+ 27.7%</v-chip>
-          </span>
-        </v-progress-linear>
-      </v-col>
+    <v-row justify="space-around">
+      <v-btn color="white" depressed large rounded class="comparison-button text-capitalize">
+        Selengkapnya
+        <v-icon class="ml-4">arrow_forward</v-icon>
+      </v-btn>
+    </v-row>
 
 
-      <v-col cols="12" sm="12" md="3" lg="3" class="pa-2">
-        <v-progress-linear value="20" rounded class="justify-start pl-2 my-6" height="60" color="#00C487">
-          <span class="progress-bar-icons material-icons-round">
-            request_quote
-          </span>
-          <span class="progress-bar-txt">
-            Dollar
-          </span>
+    <v-row justify="center" class="mb-12 text-left mt-12">
 
-          <span class=" progress-bar-price font-weight-black body-1">
-            $1.022
-            <v-chip class="ma-2" color="#00C487">+ 2%</v-chip>
-          </span>
-        </v-progress-linear>
+      <v-col cols="4" sm="4" md="4" lg="4" class="pa-2">
 
+        <v-list-item class="mb-8">
 
-      </v-col>
-      <v-col cols="12" sm="12" md="3" lg="3" class="pa-2">
+          <v-list-item-avatar size="90">
+            <v-img :src="avatar"></v-img>
+          </v-list-item-avatar>
+          <v-list-item-content>
+
+            <v-list-item-title class="title font-weight-bold mb-2">
+              Experts lecture
+            </v-list-item-title>
+            <v-list-item-subtitle>Help to employees reach the goals from an experts lecture</v-list-item-subtitle>
 
 
-        <v-progress-linear value="300" rounded class="justify-start pl-2 my-6" height="60" color="#FFA41B">
-          <span class="progress-bar-icons material-icons-round">
-            currency_bitcoin
-          </span>
-          <span class="progress-bar-txt">
-            Bitcoin
-          </span>
-          <span class=" progress-bar-price font-weight-black body-1">
-            $3.000
-            <v-chip class="ma-2" color="rgba(0,0,0,0.2)">+ 300%</v-chip>
-          </span>
-        </v-progress-linear>
+          </v-list-item-content>
+        </v-list-item>
+
+
+
+        <v-list-item>
+
+          <v-list-item-avatar size="90">
+            <v-img :src="various"></v-img>
+          </v-list-item-avatar>
+          <v-list-item-content>
+
+            <v-list-item-title class="title font-weight-bold mb-2">
+              Various category 
+            </v-list-item-title>
+            <v-list-item-subtitle>Various category to
+improve your skill
+</v-list-item-subtitle>
+
+
+          </v-list-item-content>
+        </v-list-item>
+
+
+
 
       </v-col>
 
+
+      <v-col cols="4" sm="4" md="4" lg="4" class="pa-2">
+
+
+        <v-list-item class="mb-8">
+
+          <v-list-item-avatar size="90">
+            <v-img :src="intensive"></v-img>
+          </v-list-item-avatar>
+          <v-list-item-content>
+
+            <v-list-item-title class="title font-weight-bold mb-2">
+              Intensive program
+            </v-list-item-title>
+            <v-list-item-subtitle>Intensive program to boost 
+your result</v-list-item-subtitle>
+
+
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item>
+
+          <v-list-item-avatar size="90">
+            <v-img :src="flexible"></v-img>
+          </v-list-item-avatar>
+          <v-list-item-content>
+
+            <v-list-item-title class="title font-weight-bold mb-2 title-line">
+              Flexible time
+            </v-list-item-title>
+            <v-list-item-subtitle>Flexible time & content create</v-list-item-subtitle>
+
+
+          </v-list-item-content>
+        </v-list-item>
+
+
+
+
+
+      </v-col>
 
     </v-row>
-    <p class="caption text-center">Comparison of $ 1.000 investment (Funds invested on 1 January 2020). Return
-      calculations are based on to the value of each asset as of 31 December
-      2020.</p>
+
   </div>
 
 </template>
@@ -92,7 +115,21 @@
   @import './comparison-two';
 </style>
 <script>
+  import avatar from '~/static/images/lecture.svg'
+  import intensive from '~/static/images/intensive.svg'
+  import various from '~/static/images/various.svg'
+    import flexible from '~/static/images/flexible.svg'
+
   export default {
-    components: {}
+    components: {},
+    data() {
+      return {
+        avatar: avatar,
+        intensive: intensive,
+        various: various,
+        flexible: flexible,
+
+      }
+    }
   }
 </script>

@@ -1,21 +1,21 @@
 <template>
   <v-container tag="footer" class="footer mt-16 pt-8">
     <v-row>
-      <v-col md="4" cols="12">
+      <v-col md="3" cols="12">
         <div class="logo">
-          <img :src="logo" alt="logo">
-          <h6 class="mb-2 mt-2 body-1 text-left font-weight-bold">
-            {{ brand.starter.projectName }}
+            <h6 class="mb-2 mt-2 body-2 text-left font-weight-bold">
+            Product by
           </h6>
+          <img :src="logo" alt="logo">
+        
         </div>
-        <p class="body-2 pr-10">Assets stored on Pintu are protected and secured by curv.co technology. fingerprint
-          scanner, face ID.</p>
+       
       </v-col>
-      <v-col class="pa-4" md="8" cols="12">
+      <v-col class="pa-4 pl-10" md="9" cols="12">
         <v-expansion-panels v-if="isMobile">
           <v-expansion-panel v-for="(footer, index) in footers" :key="index" class="accordion-content">
             <v-expansion-panel-header>
-              <h6 class="body-1 mb-4">
+              <h6 class="body-2 mb-4 text-uppercase">
                 {{ footer.title }}
               </h6>
             </v-expansion-panel-header>
@@ -33,7 +33,7 @@
         </v-expansion-panels>
         <v-row v-if="isDesktop" justify="space-around">
           <v-col v-for="(footer, index) in footers" :key="index" class="pa-4 site-map-item">
-            <h6 class="body-1 font-weight-bold mb-4">
+            <h6 class="body-2 text-uppercase font-weight-bold mb-4">
               {{ footer.title }}
             </h6>
             <ul>
@@ -76,7 +76,7 @@
 </style>
 
 <script>
-  import logo from '~/static/images/cryptogate-icon.svg'
+  import logo from '~/static/images/logo-edumo.svg'
   import brand from '~/static/text/brand'
 
   export default {
@@ -84,7 +84,15 @@
       logo: logo,
       brand: brand,
       lang: 'en',
-      footers: [{
+      footers: [
+        {
+          title: 'Our Office',
+          icon: 'meeting_room',
+          description: ['Panin Tower Senayan City, 15th Floor , Jl. Asia Afrika Lot 19, Jakarta Pusat 10270', '021 3950 1762', 'info@edumo.com'],
+          link: ['#', '#', '#']
+        },
+
+        {
           title: 'Company',
           description: ['Team', 'History', 'Contact us', 'Locations'],
           link: ['#team', '#history', '#contact-us', '#locations']
@@ -108,14 +116,7 @@
           title: 'Social Media',
           description: ['Facebook', 'Twitter', 'Google'],
           link: ['#privacy-policy', 'https://twitter.com/themesmile', '#terms-of-use']
-        },
-        {
-          title: 'Our Office',
-          icon: 'meeting_room',
-          description: ['3517 W. Gray St. Utica, Pennsylvania 57867'],
-          link: ['#privacy-policy', '#terms-of-use']
         }
-
       ]
     }),
     mounted() {

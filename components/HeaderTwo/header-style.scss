@@ -55,9 +55,9 @@ $flag: '/images/flag-logo.png';
 
 .header.v-sheet.v-app-bar {
   @include palette-text-primary;
-  @include palette-background-paper;
-  -webkit-backdrop-filter: blur(24px) !important;
-  backdrop-filter: blur(24px) !important;
+  // @include palette-background-paper;
+  // -webkit-backdrop-filter: blur(24px) !important;
+  // backdrop-filter: blur(24px) !important;
   box-shadow: none !important;
   transition: all 0.3s ease;
 
@@ -79,8 +79,8 @@ $flag: '/images/flag-logo.png';
     border-bottom: 1px solid #0000000d;
     @include shadow4;
     background: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(24px) !important;
-    backdrop-filter: blur(24px) !important;
+    // -webkit-backdrop-filter: blur(24px) !important;
+    // backdrop-filter: blur(24px) !important;
 
     .vertical-divider {
       min-height: $spacing3;

@@ -2,20 +2,18 @@
 
   <div class="feature-more">
     <v-container class="my-16">
-          <v-row class="mt-16">
-      <v-col cols="12" sm="12" class="mt-16 text-center">
-        <h2 class="font-weight-medium display-2 font-weight-bold mb-3">Easy, even for beginners.</h2>
-        <p class="body-1">Experience a different investing experience. <br>Trade, analyze, manage assets, and learn
+               <v-row justify="center" class="mb-12">
+                <v-col md="10" sm="10" cols="10" lg="8" class="pa-2 pr-4 mt-16 text-center">
+  
+        <h2 class="font-weight-medium display-2 font-weight-bold mb-3 cryptogate-title">Easy, even for beginners.</h2>
+        <p class="body-1">Experience a different investing experience. Trade, analyze, manage assets, and learn
           about crypto.
           Find all your investment needs on Crypto.</p>
       </v-col>
     </v-row>
     <v-row justify="space-around">
 
-      <v-btn depressed dark large rounded class="comparison-button text-capitalize">
-        Start Investing Now
-        <v-icon class="ml-4">arrow_forward</v-icon>
-      </v-btn>
+
     </v-row>
 
       <u-animate-container>
@@ -23,10 +21,14 @@
           <v-col md="6" class="px-6" cols="12">
             <div class="feature-item">
               <u-animate name="fadeInLeft" delay="0.5s" duration="0.6s">
-                <figure class="img">
-                  <v-img class="rounded-xl my-12 feature-image"  position="center" src="https://via.placeholder.com/800x1615?text=Phone+MockUp"  contain max-height="450"></v-img>
-                </figure>
-               
+                    <kinesis-container event="scroll">
+                  <kinesis-element :strength="20" type="depth">
+                    <figure class="img">
+                      <v-img class="my-12 feature-image" position="center" :src="featureImage01" contain
+                        max-height="450"></v-img>
+                    </figure>
+                  </kinesis-element>
+                </kinesis-container>
               </u-animate>
             </div>
           </v-col>
@@ -42,6 +44,10 @@
                 <p class="text body-1">
                   Sign up with your email, verify your account by taking a photo of your KTP, SIM, or passport.
                 </p>
+                      <v-btn depressed dark large  class="mt-4 comparison-button text-capitalize">
+        Start Investing Now
+        <v-icon class="ml-4">arrow_forward</v-icon>
+      </v-btn>
               </u-animate>
             </div>
           </v-col>
@@ -55,9 +61,14 @@
           <v-col md="6" class="px-1" cols="12">
             <div class="feature-item">
               <u-animate name="fadeInLeft" delay="0.5s" duration="0.6s">
-                <figure class="img">
-                  <v-img class="my-12 feature-image rounded-xl "  position="center" src="https://via.placeholder.com/800x1615?text=Phone+MockUp"  contain max-height="450"></v-img>
-                </figure>
+                   <kinesis-container >
+                  <kinesis-element :strength="20" type="depth_inv" >
+                    <figure class="img">
+                      <v-img class="my-12 feature-image" position="center" :src="featureImage01" contain
+                        max-height="450"></v-img>
+                    </figure>
+                  </kinesis-element>
+                </kinesis-container>
                
               </u-animate>
             </div>
@@ -74,6 +85,10 @@
                 <p class="text body-1">
                   Deposit your Rupiah balance by transferring funds from banks or your preferred e-wallets.
                 </p>
+                                  <v-btn depressed dark large  class="mt-4 comparison-button text-capitalize">
+        Start Investing Now
+        <v-icon class="ml-4">arrow_forward</v-icon>
+      </v-btn>
               </u-animate>
             </div>
           </v-col>
@@ -85,10 +100,14 @@
           <v-col md="6" class="px-6" cols="12">
             <div class="feature-item">
               <u-animate name="fadeInLeft" delay="0.5s" duration="0.6s">
-                <figure class="img">
-                  <v-img class="rounded-xl my-12 feature-image"  position="center" src="https://via.placeholder.com/800x1615?text=Phone+MockUp"  contain max-height="450"></v-img>
-                </figure>
-               
+                       <kinesis-container   event="scroll">
+                  <kinesis-element :strength="20" type="rotate" >
+                    <figure class="img">
+                      <v-img class="my-12 feature-image" position="center" :src="featureImage01" contain
+                        max-height="450"></v-img>
+                    </figure>
+                  </kinesis-element>
+                </kinesis-container>
               </u-animate>
             </div>
           </v-col>
@@ -104,6 +123,10 @@
                 <p class="text body-1">
                   Experience the easiest way to buy and sell crypto assets.
                 </p>
+                                  <v-btn depressed dark large  class="mt-4 comparison-button text-capitalize">
+        Start Investing Now
+        <v-icon class="ml-4">arrow_forward</v-icon>
+      </v-btn>
               </u-animate>
             </div>
           </v-col>

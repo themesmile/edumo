@@ -1,45 +1,53 @@
 <template>
   <div>
+
     <div class="main-wrap">
       <main-header class="main-header" />
       <main class="container-wrap">
+
         <section id="home" class="home">
-          <v-parallax class="parallax-crypto" :src="homeBg">
-            <v-container>
-              <animate-slider-two />
-            </v-container>
-          </v-parallax>
-        </section>
-        <section id="comparison" class="comparison">
-          <ComparisonTwo />
-        </section>
-        <section id="feature" class="space-top space-bottom">
-          <v-parallax class="cryptogate-parallax" :src="featureBg">
-            <v-container>
-              <FeatureTwo />
-            </v-container>
-          </v-parallax>
-        </section>
-        <section id="testimonials" class="space-top">
           <v-container>
-            <TestimonialsTwo />
+            <animate-slider />
+            <v-parallax class="parallax-crypto" :src="homeBg"> </v-parallax>
           </v-container>
+          <CoinBg />
+        </section>
+
+        <section id="comparison" class="comparison">
+          <v-container>
+            <Comparison />
+          </v-container>
+        </section>
+
+    
+
+        <section id="feature" class="space-top space-bottom">
+          <v-parallax class="parallax-crypto" :src="featureBg">
+            <v-container>
+              <Feature />
+            </v-container>
+          </v-parallax>
+        </section>
+    <section id="subscribe">
+          <Subscribe />
+        </section>
+
+        <section id="testimonials" class="space-top">
+          <Testimonials />
         </section>
       </main>
       <hidden point="mdDown">
         <page-nav />
       </hidden>
-      <!-- <hidden point="mdDown">
+      <hidden point="mdDown">
         <notification />
-      </hidden> -->
+      </hidden>
       <section id="faq" class="space-top account-bg-color">
         <v-parallax class="parallax-crypto" :src="accountBg">
-          <SubscribeTwo />
-           <FaqTwo />
-          <Blog />
-         
           <create-account />
+          <faq />
           <main-footer />
+
         </v-parallax>
       </section>
     </div>
@@ -53,15 +61,16 @@
 <script>
   import Header from '~/components/Header'
   import Hidden from '~/components/Hidden'
-  import AnimateSliderTwo from '~/components/AnimateSliderTwo'
-  import ComparisonTwo from '~/components/ComparisonTwo'
-  import FeatureTwo from '~/components/FeatureTwo'
-   import CreateAccount from '~/components/CreateAccount'
+  import AnimateSlider from '~/components/AnimateSlider'
+  import Comparison from '~/components/Comparison'
+  import CoinBg from '~/components/CoinBg'
+  import Feature from '~/components/Feature'
   import Counter from '~/components/Counter'
-  import TestimonialsTwo from '~/components/TestimonialsTwo'
-  import FaqTwo from '~/components/FaqTwo'
+  import Testimonials from '~/components/Testimonials'
+  import CreateAccount from '~/components/CreateAccount'
+  import Faq from '~/components/Faq'
   import Blog from '~/components/Blog'
-  import SubscribeTwo from '~/components/SubscribeTwo'
+  import Subscribe from '~/components/Subscribe'
   import Footer from '~/components/Footer'
   import PageNav from '~/components/PageNav'
   import Notification from '~/components/Notification'
@@ -71,22 +80,25 @@
   import accountBg from '~/static/images/account-bg.svg'
 
 
+
   export default {
     components: {
       'main-header': Header,
-      'animate-slider-two': AnimateSliderTwo,
+      'animate-slider': AnimateSlider,
       'create-account': CreateAccount,
       Hidden,
-      ComparisonTwo,
-      FeatureTwo,
+      Comparison,
+      CoinBg,
+      Feature,
       Counter,
-      TestimonialsTwo,
-      FaqTwo,
+      Testimonials,
+      Faq,
       Blog,
-      SubscribeTwo,
+      Subscribe,
       PageNav,
       Notification,
       'main-footer': Footer
+
     },
     data() {
       return {

@@ -4,45 +4,43 @@
       <main-header class="main-header" />
       <main class="container-wrap">
         <section id="home" class="home">
-          <v-parallax class="parallax-crypto" :src="homeBg">
+        
             <v-container>
-              <animate-slider />
+              <animate-slider-two />
             </v-container>
-          </v-parallax>
+         
         </section>
-
         <section id="comparison" class="comparison">
-          <v-container>
-            <Comparison />
-          </v-container>
+          <ComparisonTwo />
         </section>
-        <section id="subscribe">
-          <Subscribe />
-        </section>
-      <section id="feature" class="space-top space-bottom">
-          <v-parallax  class="parallax-crypto" :src="featureBg">
+        <section id="feature" class="space-top space-bottom">
+          <v-parallax class="cryptogate-parallax" :src="featureBg">
             <v-container>
-              <Feature />
+              <FeatureTwo />
             </v-container>
           </v-parallax>
         </section>
- 
-           <section id="testimonials" class="space-top">
-            <Testimonials />
+        <section id="testimonials" class="space-top">
+          <v-container>
+            <TestimonialsTwo />
+          </v-container>
         </section>
       </main>
       <hidden point="mdDown">
         <page-nav />
       </hidden>
-      <hidden point="mdDown">
+      <!-- <hidden point="mdDown">
         <notification />
-      </hidden>
+      </hidden> -->
       <section id="faq" class="space-top account-bg-color">
         <v-parallax class="parallax-crypto" :src="accountBg">
-          <create-account />
-          <faq />
+         
+           <!-- <FaqTwo />
+          <Blog />
+         
+          <create-account /> -->
+           <SubscribeTwo />
           <main-footer />
-       
         </v-parallax>
       </section>
     </div>
@@ -56,42 +54,40 @@
 <script>
   import Header from '~/components/Header'
   import Hidden from '~/components/Hidden'
-  import AnimateSlider from '~/components/AnimateSlider'
-  import Comparison from '~/components/Comparison'
-  import Feature from '~/components/Feature'
+  import AnimateSliderTwo from '~/components/AnimateSliderTwo'
+  import ComparisonTwo from '~/components/ComparisonTwo'
+  import FeatureTwo from '~/components/FeatureTwo'
+   import CreateAccount from '~/components/CreateAccount'
   import Counter from '~/components/Counter'
-  import Testimonials from '~/components/Testimonials'
-  import CreateAccount from '~/components/CreateAccount'
-  import Faq from '~/components/Faq'
+  import TestimonialsTwo from '~/components/TestimonialsTwo'
+  import FaqTwo from '~/components/FaqTwo'
   import Blog from '~/components/Blog'
-  import Subscribe from '~/components/Subscribe'
+  import SubscribeTwo from '~/components/SubscribeTwo'
   import Footer from '~/components/Footer'
   import PageNav from '~/components/PageNav'
   import Notification from '~/components/Notification'
   import brand from '~/static/text/brand'
   import featureBg from '~/static/images/feature-bg.svg'
   import homeBg from '~/static/images/home-bg.svg'
-  import accountBg from '~/static/images/account-bg.svg'
-
+  import accountBg from '~/static/images/footer-bg.svg'
 
 
   export default {
     components: {
       'main-header': Header,
-      'animate-slider': AnimateSlider,
+      'animate-slider-two': AnimateSliderTwo,
       'create-account': CreateAccount,
       Hidden,
-      Comparison,
-      Feature,
+      ComparisonTwo,
+      FeatureTwo,
       Counter,
-      Testimonials,
-      Faq,
+      TestimonialsTwo,
+      FaqTwo,
       Blog,
-      Subscribe,
+      SubscribeTwo,
       PageNav,
       Notification,
       'main-footer': Footer
-    
     },
     data() {
       return {

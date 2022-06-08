@@ -1,0 +1,142 @@
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+		border-radius: 50%;
+	}
+	100% {
+		transform: translateY(-1000px) rotate(720deg);
+		opacity: 0;
+		border-radius: 50%;
+	}
+}
+.area {
+
+	width: 100%;
+	height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.circles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	li {
+		position: absolute;
+		display: block;
+		list-style: none;
+		width: 20px;
+		height: 20px;
+		// background: rgba(255, 255, 255, 1);
+		animation: animate 25s linear infinite;
+		bottom: -150px;
+		&:nth-child(1) {
+			left: 10%;
+			width: 120px;
+			height: 120px;
+			animation-delay: 0s;
+			background: url(../../static/images/icon/bitcoin_F.png) no-repeat;
+			background-size: 100%;
+			background-position: 100%;
+
+		}
+		&:nth-child(2) {
+			left: 15%;
+			width: 47px;
+			height: 47px;
+			animation-delay: 2s;
+			animation-duration: 12s;
+			background: url(../../static/images/icon/bitshares_F.png) no-repeat;
+			background-size: 100%;
+			background-position: 100%;
+		}
+		&:nth-child(3) {
+			left: 30%;
+			width: 60px;
+			height: 60px;
+			animation-delay: 4s;
+            background: url(../../static/images/icon/Avalanche_F.png) no-repeat;
+            background-size: 100%;
+			background-position: 100%;
+		}
+		&:nth-child(4) {
+			left: 70%;
+			width: 90px;
+			height: 90px;
+			animation-delay: 0s;
+			animation-duration: 18s;
+            background: url(../../static/images/icon/Tether_F.png) no-repeat;
+            background-size: 100%;
+			background-position: 100%;
+		}
+		&:nth-child(5) {
+			content: "berhasil";
+			left: 60%;
+			width: 80px;
+			height: 80px;
+			animation-delay: 0s;
+            background: url(../../static/images/icon/etherium.png) no-repeat;
+      
+            background-size: 100%;
+			background-position: 100%;
+		}
+		&:nth-child(6) {
+			left: 75%;
+			width: 110px;
+			height: 110px;
+			animation-delay: 3s;
+            background: url(../../static/images/icon/Polygon_F.png) no-repeat;
+          
+            background-size: 100%;
+			background-position: 100%;
+		}
+		&:nth-child(7) {
+			left: 18%;
+			width: 100px;
+			height: 100px;
+			animation-delay: 7s;
+            background: url(../../static/images/icon/Swipe_F.png) no-repeat;
+       
+       
+            background-size: 100%;
+			background-position: 100%;
+		}
+		&:nth-child(8) {
+			left: 50%;
+			width: 75px;
+			height: 75px;
+			animation-delay: 15s;
+			animation-duration: 45s;
+            background: url(../../static/images/icon/cardano_F.png) no-repeat;
+            background-size: 100%;
+			background-position: 100%;
+		}
+		&:nth-child(9) {
+			left: 26%;
+			width: 70px;
+			height: 70px;
+			animation-delay: 2s;
+			animation-duration: 35s;
+            background: url(../../static/images/icon/Binance_F.png) no-repeat;
+
+            background-size: 100%;
+			background-position: 100%;
+		}
+		&:nth-child(10) {
+			left: 85%;
+			width: 100px;
+			height: 100px;
+			animation-delay: 0s;
+			animation-duration: 11s;
+            background: url(../../static/images/icon/Aave_F.png) no-repeat;
+            background-size: 100%;
+			background-position: 100%;
+            
+		}
+	}
+}
