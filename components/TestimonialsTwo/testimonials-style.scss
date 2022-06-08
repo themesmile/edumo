@@ -1,0 +1,21 @@
+.testimonial-wrap {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  h3{
+    font-style: normal;
+font-weight: bold;
+font-size: 45px;
+line-height: 58px;
+/* or 130% */
+
+text-align: center;
+text-transform: capitalize;
+  }
+}
+.carousel {
+ 
+}
+.item {
+  padding: $spacing2
+}

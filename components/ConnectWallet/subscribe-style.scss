@@ -1,0 +1,59 @@
+@function section-margin($margin) {
+  @return $margin * 5;
+}
+$font-family:'Outfit';
+$body-font-family: 'Outfit';
+$heading-font-family: $body-font-family;
+[class*='text-'],
+[class*='text-lg'] {
+    font-family: $font-family, sans-serif !important;
+  }
+  
+.subscribe-wrap {
+  background: linear-gradient(88.63deg, #004FBD 7.41%, #7A27FD 99.53%);
+  border-radius: 30px;
+  position: relative;
+
+  
+
+  h5 {
+    color: #fff !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    /* or 117% */
+    letter-spacing: -1.2px;
+  }
+}
+.cryptogate-subcribe{
+  position: relative;
+    right: -19px;
+    top: -1px;
+
+    padding: 0 40px!important;
+   
+
+}
+.cryptogate-input {
+  .v-input__control {
+    .v-input__slot {
+      padding: 0 !important;
+    }
+  }
+
+}
+
+.paper {
+  padding: $spacing4;
+  width: 100%
+}
+
+.text-field {
+  top: $spacing2;
+  position: relative;
+}
+
+.right-icon {
+  @include margin-left($spacing1)
+}

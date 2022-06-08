@@ -1,0 +1,75 @@
+.comparison-cryptogate {
+    margin: 0 auto 0 auto;
+
+    .v-progress-linear {
+        border-radius: 60px;
+        margin: 0; // remove margin as the txt will create that margin
+
+        .progress-bar-txt {
+            position: absolute;
+            font-size: 16px;
+            top: 17px;
+            left: 45px;
+            z-index: 1;
+            color: #fff;
+        }
+
+        .progress-bar-price {
+            position: absolute;
+            font-size: 16px;
+            top: 7px;
+            right: 13px;
+            z-index: 1;
+           
+        }
+        .progress-bar-icons {
+            position: absolute;
+            top: 17px;
+            left: 15px;
+            z-index: 1;
+            color: #fff;
+        
+        }
+    }
+
+    h1 {
+        font-family: "Outfit", sans-serif !important;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: -1px;
+        color: #222222;
+    }
+
+    h6 {
+        font-family: "Outfit", sans-serif !important;
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+        color: #545663;
+    }
+
+    .comparison-button {
+
+        font-family: "Outfit", sans-serif !important;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: capitalize !important;
+
+    }
+
+}
+
+.theme--dark {
+    .hero-cryptogate {
+        h1 {
+            color: #fff;
+        }
+
+        h6 {
+            color: #aeafb0;
+        }
+    }
+
+}
