@@ -1,0 +1,93 @@
+@function section-margin($margin) {
+  @return $margin * 5;
+}
+
+$font-family:'Outfit';
+$body-font-family: 'Outfit';
+$heading-font-family: $body-font-family;
+
+[class*='text-'],
+[class*='text-lg'] {
+  font-family: $font-family, sans-serif !important;
+}
+
+.align-center {
+  margin: 0 auto !important;
+}
+
+.v-application {
+  font-family: $font-family;
+  line-height: 1.75;
+
+  .headline,
+  [class*='display-'],
+  [class*='text-lg'],
+  [class*='text-'] {
+    font-family: $font-family, sans-serif !important;
+
+  }
+
+
+  .comparison {
+    background: linear-gradient(180deg, #B3D1FB 0%, #FFFFFF 100%);
+  }
+
+  .home {
+    background: linear-gradient(180deg, #FFFFFF 0%, #B3D1FB 100%);
+  }
+
+  .account-bg-color {
+    background: linear-gradient(180deg, #FFFFFF 0%, #B3D1FB 100%);
+  }
+}
+
+.main-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+.space-top {
+  padding-top: section-margin($spacing1);
+}
+
+.container-wrap {
+  margin-top: $spacing10;
+
+  &>section {
+    position: relative;
+  }
+}
+
+.parallax-crypto {
+  height: 100% !important;
+
+}
+
+.parallax-crypto-home {
+  height: 100% !important;
+
+  div {
+    img {
+      top: 50% !important;
+    }
+  }
+
+
+}
+
+.cryptogate-parallax {
+  height: 100% !important;
+}
+
+.theme--dark {
+
+  .home,
+  .comparison,
+  .account-bg-color {
+    background: transparent;
+  }
+
+}
